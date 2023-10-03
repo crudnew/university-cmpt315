@@ -5,5 +5,6 @@ Myself and 4 other students collaborated on this university project for our CMPT
 
 Used: Microsoft Visual Studio Code, Python, Django, React.JS, HTML, CSS, JavaScript
 
-•Django Backend Rest API
-•React.JS Frontend
+Django Backend Rest API
+
+React.JS Frontend
