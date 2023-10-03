@@ -1,0 +1,481 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+body {
+  overflow: none;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: black;
+}
+
+.header-style{
+  background-color: rgb(45, 45, 45);
+  
+  display:flex; 
+  height: 75px;
+  column-gap: 20px;
+  /* background-color: saddlebrown;
+  vertical-align: middle;
+  display:flex; 
+  height: 60px;
+  column-gap: 20px; */
+  
+}
+
+.header-style h1 {
+  padding-top: 15px;
+}
+
+.main-body-style{
+  background-image: 
+  url(https://cdn.britannica.com/35/100235-050-CE3936EE/view-CN-Tower-Toronto-skyline-observation-deck.jpg);
+  /* url("https://www.worldatlas.com/r/w768/upload/f5/46/e6/shutterstock-454854643.jpg"); */
+  background-size: 100% auto;
+  height: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  /* height: 100%; */
+  /* background-position: bottom; */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+}
+
+.search-style{
+  position: absolute;
+  right: 2%;
+  top: 5px;
+  
+}
+
+.card-section {
+  height: 25vh;
+ }
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-style{
+  height: 50vh;
+  width: 25vw;
+  min-width: 300px;
+  min-height: 420px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  color: black;
+  font-family: "TT Hoves Variable",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  /* height: 50vh;
+  width: 25vw;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  margin-left: 12%;
+  margin-right: 12%;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  /* opacity: 90%; */
+  /* font-family: "TT Hoves Variable",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; */
+}
+
+.cards-style{
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  /* background-color: red; */
+  padding: 50px;
+
+  /* display: flex;
+  margin-top: auto;
+  margin-bottom: 5%;
+  margin-right: 15%;
+  width: 100%; */
+  /* height: 100%; */
+  /* column-gap: 20px; */
+}
+
+.card-style-branches {
+  height: 50vh;
+  width: 25vw;
+  min-width: 300px;
+  min-height: 420px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  color: black;
+  font-family: "TT Hoves Variable",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+.list-item {
+  text-decoration: none;
+  list-style: none;
+}
+
+.dropdown-1 {
+  padding: 10px 0 5px 0;
+}
+
+.dropdown-menu {
+  /* width:;  */
+  color:black;
+}
+
+/* 
+.footer-style{
+  background-color: black;
+  height: 100%;
+  /* margin-top: 13.6%; */
+  /* margin-right: auto; */
+ /* display: flex;*/
+  /* column-gap: "-10px"; */
+  
+/*} */
+
+.footer-container {
+  display: flex;
+  padding: 0 50px;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  min-height: 40vh;
+  background-color: rgb(45, 45, 45);
+}
+
+.footer-wrapper {
+  display: flex;
+  
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.5px solid white;
+}
+
+.footer-wrapper-admin {
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+}
+
+.footer-wrapper-padding {
+  padding-top: 30px;
+}
+
+.footer-half {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-col {
+  min-width: 200px;
+  padding: 0 10px;
+}
+
+.footer-col h4 {
+  color: white;
+}
+
+.footer-col p {
+  color: #bababa;
+}
+
+
+.btn-admin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  border: 1px solid white;
+  /* border-color: white; */
+  box-shadow: none;
+  background: transparent;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.btn-admin:hover {
+  color: black;
+  background: white;
+}
+
+/* ------ Nav ------- */
+
+.nav-input {
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  /* background: ; */
+}
+
+.nav-container {
+  display: flex;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-nav {
+  border-radius: 4px;
+  height: 30px;
+  border: none;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* line-height: .75rem; */
+}
+
+.logo {
+  position: relative;
+  width: 500px;
+  height: 200px;
+}
+
+.nav-link-admin {
+  font-size: 14px;
+}
+
+.nav-link-admin:hover {
+  font-size: 14px;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .cards-style {
+    flex-direction: column;
+  }
+  .footer-half {
+    flex-direction: column;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  .header-style h1 {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cards-style {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-half {
+    flex-direction: column;
+  }
+  .footer-container {
+    padding-top: 30px;
+  }
+
+}
+
+.top-rentals-style{
+  margin-right: 20px;
+}
+
+.top-search {
+  display: flex;
+  position: fixed;
+  margin: 1% 10% 1% 10%;
+  background-color: #FFF;
+  border-radius: 10px;
+  width: 80%;
+  height: 6vh;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #D3D3D3;
+  z-index: 1;
+}
+
+.background{
+  background-color: #F1F1F1;
+  width: 100%;
+  height: 100%;
+  position: fixed; 
+  overflow-y: scroll;
+  padding-bottom: 10vh;
+}
+
+
+.confirmation-page {
+  height: 95%;
+  width: 90%;
+  margin: 5% 5% 5% 5%;
+  background-color: #FFF;
+  border-radius: 20px;
+  overflow-y: hidden;
+  box-shadow: 5px 5px 5px #D3D3D3;
+}
+
+.car-card {
+  display: flex;
+  width: 50vw;
+  height: 20vh;
+  margin: 10px 15px 15px 15vw;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #D3D3D3;
+}
+
+.car-img-card {
+  width: 15vw;
+  height: 100%;
+  background-color: gainsboro ;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;  
+}
+.car-card-details {
+  margin-left: 2vw;
+  margin-top: 1%;
+  font-family: "TT Hoves Variable",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+.dropdown-style{
+  z-index: 1;
+  overflow-y: hidden;
+}
+.filtering{
+  position: fixed;
+  width: 12vw;
+  height: 80vh;
+  background-color: #FFF ;
+  margin: 85px 0px 15px 2vw;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #D3D3D3;
+}
+
+.vl {
+  position: absolute;
+  border-left: 3px solid saddlebrown;
+  height: 20vh;
+  margin-left: 35vw;
+ 
+}
+.hl {
+  border-top: 3px solid saddlebrown;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: -30px;
+  border-radius: 5px;
+}
+.horizontal-slider {
+  width: 70%;
+  max-width: 500px;
+  height: 100vh;
+  margin-left:auto;
+  margin-right:auto;
+  color: saddlebrown;
+}
+.example-thumb {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  background: #ffffff;
+  border: 5px solid saddlebrown;
+  border-radius: 100%;
+  display: block;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+.example-thumb.active {
+  background-color: grey;
+}
+.example-track {
+  position: relative;
+  background: #ddd;
+}
+.example-track.example-track-0 {
+  background: #ffc791;
+}
+.horizontal-slider .example-track {
+  top: 20px;
+  height: 4px;
+}
+.horizontal-slider .example-thumb {
+  top: 12px;
+  width: 10px;
+  outline: none;
+  height: 10px;
+  line-height: 38px;
+}
+
+
+/* .searchInputs{
+  margin-top: 105px;
+  display: flex;
+}
+.search input{
+  background-color: white;
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 300px;
+}
+
+.searchIcon{
+  height: 60px;
+  width: 50px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+} */
+
+
+/* .App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+

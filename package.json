@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "google-maps-react": "^2.0.6",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-popup": "^0.11.0",
+    "react-slider": "^2.0.4"
+  }
+}
